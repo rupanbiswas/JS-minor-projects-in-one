@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Academia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="overlay has-fade"></div>
+        <nav class="nav">
+            <a href="index.html" class="text-logo">Academia</a>
+            <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About us</a>
+                    <ul class="nav__list--sub">
+                        <li><a class="nav__link--sub" href="about-principal.html">Principal</a></li>
+                        <li><a class="nav__link--sub" href="about-staff.html">Staff</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="admission.html" class="nav__link">Admission</a></li>
+                <li class="nav__item"><a href="activities.html" class="nav__link">Activities</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="header__menu has-fade">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="about-principal.html">Principal</a>
+            <a href="about-staff.html">Staff</a>
+            <a href="admission.html">Admission</a>
+            <a href="activities.html">Activities</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="heading--1">
+                    Welcome to academia
+                </h1>
+                <a href="admission.html" class="btn btn--primary btn--cta">
+                    get started now! <span>&rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="u-center-text u-margin-bottom-medium">
+                    <h2 class="heading--2">Lore Ipsum is simply dummy</h2>
+                </div>
+                <div class="features__wrapper">
+                    <div class="feature">
+                        <div class="feature__icon">
+                            <svg>
+                                <use href="images/feature-icons.svg#feature-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="heading--3">Lorem Ipsum</h3>
+
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">
+                            <svg>
+                                <use href="images/feature-icons.svg#feature-2"></use>
+                            </svg>
+                        </div>
+                        <h3 class="heading--3">Lorem Ipsum</h3>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">
+                            <svg>
+                                <use href="images/feature-icons.svg#feature-3"></use>
+                            </svg>
+                        </div>
+                        <h3 class="heading--3">Lorem Ipsum</h3>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">
+                            <svg>
+                                <use href="images/feature-icons.svg#feature-4"></use>
+                            </svg>
+                        </div>
+                        <h3 class="heading--3">Lorem Ipsum</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-slider">
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/img-1.jpg" alt="testimonial image">
+                    <div class="testimonial">
+                        <blockquote class="testimonial__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Accusantium quas quisquam non? Quas voluptate nulla minima
+                            deleniti optio ullam nesciunt, numquam corporis et asperiores
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/img-2.jpg" alt="testimonial image">
+                    <div class="testimonial">
+                        <blockquote class="testimonial__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Accusantium quas quisquam non? Quas voluptate nulla minima
+                            deleniti optio ullam nesciunt, numquam corporis et asperiores
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/img-3.jpg" alt="testimonial image">
+                    <div class="testimonial">
+                        <blockquote class="testimonial__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Accusantium quas quisquam non? Quas voluptate nulla minima
+                            deleniti optio ullam nesciunt, numquam corporis et asperiores
+                        </blockquote>
+                    </div>
+                </div>
+
+
+                <button class="slider__btn slider__btn--left">&larr;</button>
+                <button class="slider__btn slider__btn--right">&rarr;</button>
+                <div class="dots">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="features-details">
+            <div class="features-details__wrapper">
+                <div class="features-details__item">
+                    <div class="features-details__img-wrapper content">
+                        <img src="images/img-3.jpg" srcset="images/img-3.jpg 1600w, images/img-3-sm.jpg 600w"
+                            sizes="(min-width:90rem) calc(50w - 4.25em), 95vw" alt="kids swimming">
+                    </div>
+                    <div class="features-details__text-wrapper content">
+                        <div class="numbering">1</div>
+                        <p class="paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features-details__item">
+                    <div class="features-details__img-wrapper content">
+                        <img src="images/footbal-coach.jpg" alt="">
+                    </div>
+                    <div class="features-details__text-wrapper content">
+                        <div class="numbering">2</div>
+                        <p class="paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features-details__item">
+                    <div class="features-details__img-wrapper content">
+                        <img src="images/practical.jpg"
+                            srcset="images/practical.jpg 1600w, images/practical-sm.jpg 600w"
+                            sizes="(min-width:90rem) calc(50w - 4.25em), 95vw" alt="students in lab">
+                    </div>
+                    <div class="features-details__text-wrapper content">
+                        <div class="numbering">3</div>
+                        <p class="paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features-details__item">
+                    <div class="features-details__img-wrapper content">
+                        <img src="images/kids-reading"
+                            srcset="images/kids-reading.jpg 760w, images/kids-reading-sm.jpg 600w"
+                            sizes="(min-width:90rem) calc(50w - 4.25em), 95vw" alt="kids swimming">
+                    </div>
+                    <div class="features-details__text-wrapper content">
+                        <div class="numbering">4</div>
+                        <p class="paragraph">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <ul class="footer__links">
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32">
+                                <title>arrow-right</title>
+                                <path
+                                    d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z">
+                                </path>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32">
+                                <title>arrow-right</title>
+                                <path
+                                    d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z">
+                                </path>
+                            </svg>
+                            About us
+                        </a>
+                    </li>
+
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32">
+                                <title>arrow-right</title>
+                                <path
+                                    d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z">
+                                </path>
+                            </svg>
+                            Admission
+                        </a>
+                    </li>
+
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32">
+                                <title>arrow-right</title>
+                                <path
+                                    d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z">
+                                </path>
+                            </svg>
+                            Activities
+                        </a>
+                    </li>
+
+                    <li class="footer__links-item">
+                        <a href="#" class="footer__link">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 32 32">
+                                <title>arrow-right</title>
+                                <path
+                                    d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z">
+                                </path>
+                            </svg>
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__text">
+                    <p class="footer__para">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="footer__social">
+                <div class="footer__social-links">
+                    <a href="#" class="footer__social-link"><img src="images/whatsapp.png" alt="whatsapp img"></a>
+                    <a href="#" class="footer__social-link"><img src="images/instagram.png" alt="instagram img"></a>
+                    <a href="#" class="footer__social-link"><img src="images/facebook.png" alt="facebook img"></a>
+                </div>
+                <a href="#" class="footer__website-link">www.school.com</a>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

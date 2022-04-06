@@ -1,0 +1,79 @@
+.services{
+    /* border: 1px solid red; */
+    background: url('../img/behzad-ghaffarian-nhWgZNV85LQ-unsplash.jpg');
+    background-attachment: fixed;
+}
+.services .services-cards{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.services-cards .services-cards-img {
+    width: 40%;
+    height: 40vh;
+    box-shadow: 0 0 10px rgb(70, 70, 70);
+}
+.services-cards-img,
+.services-cards-content{
+    width: 50%;
+}
+.services-cards-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services-cards-content {
+    font-size: 1.4em;
+    padding: 20px;
+    /* border: 1px solid rgb(58, 58, 58); */
+/* box-shadow: 0 0 10px rgb(95, 95, 95); */
+/* border: 1px solid rgb(95, 95, 95); */
+background: rgb(245, 236, 236);
+}
+.services-cards-content ul{
+    list-style-type: none;
+}
+.services-cards-content ul li{
+    margin-top: 10px;
+}
+.services-cards-content p{
+    color: rgb(121, 121, 121);
+}
+.opposite{
+    flex-direction: row-reverse;
+    /* border: 1px solid blue; */
+/* justify-content: space-between; */
+} 
+.opposite .services-cards-content{
+    text-align: right;
+}
+
+/* Work execution */
+.work-execution{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+}
+.work-execution .work-execution-card{
+    /* border: 1px solid red; */
+    padding: 20px;
+    width: 19%;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(107, 107, 107);
+    transition: all ease 0.5s;
+}
+.work-execution-card:hover{
+    transform: scale(1.05);
+}
+.work-execution-card i{
+    font-size: 6em;
+    color: rgb(192, 23, 23);
+    margin-bottom: 30px;
+}
+.work-execution-card h1{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,53 @@
+.features {
+    padding: 2.5rem;
+    padding-bottom: 4rem;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        @include respond(phone) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0;
+        }
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        svg {
+            width: 6rem;
+            height: 6rem;
+
+            @include respond(tab-port) {
+                width: 8rem;
+                height: 8rem;
+            }
+
+            @include respond(tab-port) {
+                width: 9rem;
+                height: 9rem;
+            }
+
+            @include respond(tab-land) {
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+
+    }
+}

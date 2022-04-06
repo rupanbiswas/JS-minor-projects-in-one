@@ -1,0 +1,59 @@
+.principal-hero {
+    background-image: url("../images/footer-img.jpg");
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+        opacity: 40%;
+    }
+
+
+    .about-hero__text {
+        transform: translate(-50%, -70%);
+    }
+}
+
+
+.principal-details {
+    background-image: radial-gradient(farthest-side at 20% 40%, #fff, #808080);
+    padding-inline: 2.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include respond(phone) {
+        align-items: flex-end;
+        padding-bottom: 0;
+    }
+
+
+    &__wrapper {
+        max-width: max(60rem, 70vw);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 3rem;
+
+        @include respond(phone) {
+            grid-template-columns: 1fr 1fr;
+
+        }
+    }
+
+    &__text {
+        align-self: center;
+    }
+
+
+    &__img-wrapper {
+        align-self: end;
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+.common-hero {
+    position: relative;
+    height: 60vh;
+
+    @include respond(phone) {
+        height: calc(100vh - 5.9rem);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000;
+        opacity: 5%;
+        z-index: 10;
+
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 15;
+        transform: translate(-50%, -70%);
+        text-align: center;
+    }
+
+}
+
+
+.about-hero {
+    background-image: url("../images/about-bg.jpg");
+    background-size: 100%;
+    background-position: center;
+
+    &__text {
+        @include respond(phone) {
+            transform: translate(-25%, -50%);
+        }
+    }
+}
+
+
+.section-mission {
+    height: 65vh;
+
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 5rem 2.5rem;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000;
+        opacity: 57%;
+        z-index: 10;
+
+    }
+
+    &__text {
+        position: relative;
+        max-width: max(50rem, 70vw);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: max(3rem, 4vw);
+        z-index: 15;
+
+    }
+}
+
+.title-light-bg {
+    padding: 0.5em clamp(0.5em, 1vw, 1em);
+    background-color: rgba($color-white, .34);
+    border-radius: 2rem;
+}
+
+
+.section-vision {
+    background-color: #8CA4B9;
+    padding: 5rem 2.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 0;
+
+    @include respond(phone) {
+        align-items: flex-end;
+    }
+
+
+
+    &__wrapper {
+        max-width: max(60rem, 70vw);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 3rem;
+
+        @include respond(phone) {
+            grid-template-columns: 2fr 1.5fr;
+
+        }
+    }
+
+    &__text {
+        align-self: start;
+    }
+
+    &__img-wrapper {
+        align-self: end;
+
+        img {
+            width: 100%;
+        }
+    }
+}

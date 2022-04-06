@@ -1,0 +1,56 @@
+.hero{
+    position: relative;
+    background-image: url("../images/hero-sm.jpg");
+    background-position: 0px -1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 5.9rem);
+
+    @include respond(phone){
+     background-image: url("../images/hero.jpg");
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000;
+        opacity: 19%;
+        z-index: 10;
+    }
+
+    &__content{
+        max-width: max(28rem,50%);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+
+
+        padding: 3rem 3rem;
+
+        @include respond(phone){
+            padding: 3rem 3rem;
+        }
+        
+        @include respond(tab-port){
+            padding: 5rem 7rem;
+        }
+
+        @include respond(tab-land){
+            padding: 3rem 10rem;
+        }
+
+    }
+
+
+}
+

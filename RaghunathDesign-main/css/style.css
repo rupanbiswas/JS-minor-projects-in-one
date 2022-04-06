@@ -1,0 +1,807 @@
+/* @font-face {
+    font-family: myFont;
+    /* src: url(../typography/gabriola\ Font\ Download.woff); */
+  /* } */
+:root{
+  
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: myFont,Helvetica, sans-serif;
+}
+.icon{
+    display: none;
+}
+header .topheader{
+    width: 100%;
+    background-color: #323232;
+height: 6em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.topheader h1{
+    color: rgb(185, 185, 185);
+    width: 50%;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* font-size: 2.3em; */
+}
+.big-banner{
+    height: 70vh;
+position: relative;
+}
+.big-banner-img{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+.big-banner-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    position: relative;
+}
+.big-banner .mynav{
+    font-size: 1.4em;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 5px 10px grey;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    top: -25px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgb(250, 249, 249);
+    border-radius: 5px;
+}
+.big-banner .mynav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    /* border: 1px solid blue; */
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.big-banner .mynav ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.big-banner-content{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 1.5em;
+    width: 40%;
+    color: white;
+    text-transform: uppercase;
+    /* left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right:auto; */
+}
+.big-banner-content p{
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+/* header cards */
+.header-cards{
+    position: relative;
+    z-index: 100;
+    margin-top: -100px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.header-cards .header-card{
+    width: 25%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0px 10px grey;
+}
+.header-cards .header-card .fa-newspaper-o,
+.header-cards .header-card .fa-pie-chart,
+.header-cards .header-card .fa-paint-brush{
+    font-size: 4.5em;
+    border: 5px solid rgb(197, 29, 29);
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -60px;
+}
+.header-cards .header-card h1{
+    margin-top: 15px;
+}
+.header-cards .header-card p{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.header-cards .header-card h2 a{
+    text-decoration: none;
+    color: black;
+    transition: all ease-in 0.3s;
+}
+.header-cards .header-card h2 a:hover{
+    text-decoration: none;
+    color: rgb(197, 29, 29);
+    /* transform: scale(2px); */
+
+}
+.big-banner-content{
+    overflow: hidden;
+}
+
+
+
+/* animations */
+.slide-h1{
+    /* margin-left: -500px; */
+    animation: slide-h1 1.5s ease-in-out;
+    /* animation-delay: 0.5s; */
+    /* color: royalblue; */
+}
+@keyframes slide-h1 {
+    0%{margin-left: -500px;
+        filter: blur(10px);
+        }
+    50%{margin-left: -250px;
+        filter: blur(5px);
+        }
+    100%{
+        margin-left: 0;
+    }
+}
+.slide-p{
+    /* text-align: justify; */
+    animation: slide-p 2s ease-in-out;
+    /* animation-delay: 0.5s; */
+}
+@keyframes slide-p {
+    0%{ margin-left: -1000px;
+        filter: blur(10px);}
+    100%{
+        margin-left: 0;
+    }
+}
+.slide-card{
+/* border: 10px solid red; */
+/* margin-left: -100px; */
+    animation: slide-card 1.7s ease-in;
+}
+@keyframes slide-card{
+    0%{margin-right: -2000px;}
+    100%{margin-right: 0;}
+}
+
+/* ABOUT COMPANY */
+.about-company{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+.about-company-img{
+    padding: 20px;
+    width: 40%;
+}
+.about-company-img p{
+ font-size: 2em;
+ color: rgb(73, 71, 71);
+ width: 50%;
+ padding-left: 10px;
+ border-left: 5px solid rgb(201, 17, 17);
+}
+.about-company-content{
+width: 50%;
+padding: 20px;
+font-size: 1.5em;
+}
+.about-company-content h2{
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: rgb(201, 17, 17);
+}
+.about-company-content h1{
+    margin-bottom: 20px;
+}
+.about-company-content p{
+    margin-bottom: 10px;
+    color: rgb(73, 71, 71);
+}
+.text-change{
+   font-weight: 100;
+}
+.about-company-img img{
+    width: 100%;
+}
+.mission{
+    background-color: rgba(238, 26, 26, 0.932);
+    /* border: 1px solid red; */
+    display: flex;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+.mission:before{
+content: '';
+height: 30px;
+width: 30px;
+bottom: -30px;
+left: 30px;
+position: absolute;
+clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+margin-bottom: 0;
+background-color:  rgba(238, 26, 26, 0.932);
+/* border: 1px solid black; */
+}
+.mission .mission-statement{
+    padding: 10px;
+}
+.mission .mission-statement h3{
+    
+}
+.mission .mission-statement p{
+color: white;
+}
+.mission i{
+font-size: 4em;
+padding: 10px;
+}
+
+/* COVERED INDUSTRIES */
+.covered-industries{
+    /* border: 1px solid red; */
+padding: 20px;
+/* height: 90vh; */
+background: url('/img/dane-deaner-_-KLkj7on_c-unsplash.jpg');
+background-attachment: fixed;
+/* backdrop-filter: initial; */
+}
+.covered-industries .covered-industries-header{
+    margin-left: auto;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-right: auto;
+    
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.covered-industries-header h1{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.555);
+    width: 70%;
+    margin: auto;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.covered-industries-header h1 .change{
+    font-weight: 100;
+}
+.covered-industries-header p{
+font-weight: 600;
+font-size: 1.3em;
+}
+
+.covered-industries .covered-industries-cards {
+    /* border: 5px solid green; */
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+.covered-industries-cards .covered-industries-card{
+    /* border: 1px solid blue; */
+    width: 60%;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+/* box-shadow: 0 0 5px rgb(59, 59, 59); */
+border: 1px solid rgb(143, 143, 143);
+}
+.covered-industries-card i{
+    font-size: 3em;
+    padding: 10px;
+    color: rgb(66, 66, 66);
+    /* background-color: rgb(161, 161, 161); */
+}
+.covered-industries-card img{
+height: 300px;
+width: 800px;
+border: 2px solid black;
+margin-left: 20px;
+}
+.covered-industries-card .covered-industries-content {
+ /* border: 1px solid red; */
+ height: 100%;
+ background-color: white;
+ padding: 10px;
+ color: rgb(49, 49, 49);
+}
+.covered-industries-content h1{
+    margin-bottom: 10px;
+}
+.reverse{
+    flex-direction: row-reverse;
+/* border: 1px solid red; */
+margin-left: 550px;
+}
+.reverse img{
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+/* PROJECTS */
+.projects{
+/* border: 1px solid red; */
+padding: 10px;
+}
+.projects .projects-content{
+    width: 90%;
+    /* border: 1px solid blue; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects-content .projects-content-info{
+    /* border: 1px solid green; */
+}
+.projects-content-info{
+    font-size: 3em;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.projects-content-info h1{
+    color: rgb(197, 29, 29);
+    font-weight: 700;
+}
+.projects-content-info p{
+    font-weight: 800;
+}
+.projects-content-info .works{
+    font-weight: 200;
+    /* border: 1px solid blue; */
+}
+.projects-content .more-projects{
+    font-size: 2em;
+    padding-right: 20px;
+  
+}
+.more-projects a{
+    text-decoration: none;
+color: rgb(206, 51, 51);
+}
+.more-projects a:active{
+    color: black;
+}
+
+/* CAROUSEL CARDS */
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.cards .cards-container{
+      width: 20%;
+      margin-left: 20px;
+      border: 1px solid black;
+}
+
+/* CARDS  */
+.cards-container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+   
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .cards-container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .cards-container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #4e524e;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  /* CONTACT */
+  .contact{
+      /* border: 1px solid red; */
+      background-color: rgb(201, 17, 17);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      height: 8em;
+      margin-bottom: 2em;
+  }
+  .contact h1{
+    font-size: 3em;
+    margin-left: 50px;
+  }
+  .contact a{
+      font-size: 2.5em;
+      color: black;
+      margin-right: 50px;
+      text-decoration: none;
+      background-color: rgb(233, 233, 233);
+      padding: 10px 30px;
+  }
+  .contact a:hover{
+      color: rgb(34, 34, 34);
+  }
+
+  /* CONTACT DETAILS */
+  .contact-details{
+      border-radius: 5px;
+      /* border: 1px solid blue; */
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background: url('../img/annie-spratt-Q2QhOxN5enk-unsplash.jpg');
+     background-position:center ;
+     background-size: fill;
+     backface-visibility: hidden;
+      /* filter: brightness(0.5); */
+      z-index: -100;
+  }
+  .contact-details .contact-details-content{
+      /* border: 1px solid green; */
+
+  }
+  .contact-details-content p{
+    color: rgb(201, 17, 17);
+    font-weight: 700;
+    font-size: 2em;
+  }
+  .contact-details-content h1{
+      font-size: 3.5em;
+      padding: 10px 20px;
+      color: white;
+      background-color: rgba(116, 116, 116, 0.507);
+  }
+  .contact-details .contact-details-form{
+      /* border: 1px solid black; */
+      border-radius: 5px;
+  }
+  .contact-details .contact-details-form form{
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+  .contact-details-form form{
+   background: white;
+  }
+  .contact-details-form form h1{
+    font-size: 2.8em;
+    width: 80%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .contact-details-form form p{
+      width: 80%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 2.2em;
+  }
+  .contact-details-form form input,
+  .contact-details-form form button,
+  .contact-details-form form textarea{
+      width: 90%;
+      margin-bottom: 1.8em;
+      font-size: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      padding: 10px 20px;
+      box-shadow: 0 0 3px black;
+  }
+  .contact-details-form form button{
+      background: rgb(201, 17, 17);
+      color: white;
+  }
+
+  /* footer */
+  footer{
+      display: flex !important;
+justify-content: space-around ;
+background-color: rgb(49, 49, 49);
+color: white;
+  }
+  footer .address,
+  footer .navigation,
+  footer .social{
+      width: 25%;
+      padding: 20px;
+      /* border: 1px solid red; */
+  }
+  footer .address p,
+  footer .address a{
+      font-size: 2em;
+      color: white;
+      text-decoration: none;
+  }
+  footer .navigation h1{
+      text-align: center;
+  }
+  footer .navigation ul{
+      list-style-type: none;
+  }
+  footer .navigation a{
+      text-decoration: none;
+      color: white;
+      font-size: 1.8em;   
+  }
+  footer .social i{
+      font-size: 3em;
+      margin-top: 0.5em;
+      margin-bottom: 0.8em;
+  }
+  footer .social a{
+      color: white;
+  }
+  footer .social{
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width:480px){
+
+    header .topheader{
+        height: 3em;
+    }
+    .topheader h1{
+        width: 100%;
+        font-size: 1.5em;
+        padding-bottom: 10px;
+    }
+    .big-banner{
+        height: 100%;
+    }
+    .big-banner-img{
+        margin-top: 50px;
+    }
+    .big-banner .mynav{
+        width: 100%;
+        margin-top: -25px;
+    }
+    .big-banner .mynav ul{
+        width: 0;
+    }
+    .mynav .logo h1{
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+    .big-banner-img img{
+        margin-top: 30px;
+        object-fit: contain;
+    }
+    /* hedaercards */
+    .header-cards{
+        margin-top: 0;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .header-cards .header-card{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+    .header-cards .header-card .fa-newspaper-o,
+    .header-cards .header-card .fa-pie-chart,
+    .header-cards .header-card .fa-paint-brush{
+        font-size: 3.5em;
+        border: 5px solid rgb(197, 29, 29);
+        padding: 15px;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: -60px;
+    }
+    .header-cards .header-card h1{
+        font-size: 2.3em;
+    }
+    .header-cards .header-card p{
+        font-size: 1.4em;
+    }
+    .header-cards .header-card h2{
+        font-size: 2em;
+    }
+    /* ABOUT COMPANY */
+    .about-company{
+        flex-direction: column;
+    }
+    .about-company-img{
+        width: 100%;
+    }
+    .about-company-img p{
+        width: 95%;
+        font-size: 1.5em;
+        border-left: 2px solid rgb(201, 17, 17);
+    }
+    .about-company-content{
+        width: 100%;
+    }
+    .about-company-content h1{
+        font-size: 1.8em;
+    }
+    /* MISSION */
+    .mission i{
+        font-size: 3em;
+    }
+    .mission-statement h3{
+        margin-top: 0;
+        font-size: 1.3em;
+    }
+    .mission-statement p{
+        /* margin-top: 0; */
+        font-size: 0.8em;
+    }
+
+    /* COVERED INDUSTRIES */
+    .covered-industries{
+        margin-top: 25px;
+        background-position: center;
+        background-size: cover;
+    }
+    .covered-industries .covered-industries-header{
+        width: 100%;
+    }
+    .covered-industries-header h1{
+        width: 100%;
+    }
+    /* .covered-industries .covered-industries-cards{
+
+    } */
+    .covered-industries-cards .covered-industries-card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .covered-industries-card i{
+        font-size: 4.5em;
+    }
+    .covered-industries-card img{
+        width: 100%;
+        margin-left: 0;
+        border: 1px solid black;
+    }
+    .reverse{
+        margin-left: 0;
+    }
+    .reverse img{
+        margin-right: 0;
+    }
+
+    /* PROJECTS */
+    .projects .projects-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .projects-content-info{
+        font-size: 1.5em;
+    }
+    .projects-content .more-projects{
+        font-size: 1.7em;
+        margin-right: 0;
+    }
+    /* CONTACT */
+    .contact{
+        flex-direction: column;
+        height: 100%;
+    }
+    .contact h1{
+        font-size: 2.5em;
+    }
+    .contact a{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    /* FOOTER */
+    footer{
+        flex-direction: column;
+    }
+    footer .address,
+    footer .navigation,
+    footer .social{
+        width: 100%;
+        padding: 20px;
+        /* border: 1px solid red; */
+    }
+    .address h1{
+        font-size: 2.3em;
+    }
+    footer .address a{
+        font-size: 1.5em;
+    }
+    footer .address p{
+        font-size: 1.5em;
+    }
+    footer .navigation a{
+        font-size: 1.5em; 
+    }
+    footer .social{
+        /* flex-direction: row; */
+    }
+    footer .social i{
+        margin-bottom: 0;
+    }
+    footer .social h1{
+        font-size:2.5em ;
+    }
+
+
+
+
+      .icon{
+          display: block;
+      }
+      /* .logo h1{
+          display: hidden;
+      } */
+      .mynav ul a:not(:first-child){
+        display: none;
+        /* border: 1px solid yellow; */
+      }
+
+
+
+
+
+
+      /* Cards */
+     
+     
+     
+  }

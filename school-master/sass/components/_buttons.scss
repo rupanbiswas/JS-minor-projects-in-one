@@ -1,0 +1,33 @@
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.btn--primary{
+    background-color: $color-white;
+    text-transform: uppercase;
+    color: $color-dark-black;
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    border-radius: 5rem;
+    transition: all .2s ease;
+
+    span{
+        position: relative;
+        bottom: 2px;
+    }
+}
+
+.btn--cta{
+    position: relative;
+    z-index: 50;
+
+    &:hover{
+        background-color: $color-dark-black;
+        color: $color-white;
+    }
+}
+

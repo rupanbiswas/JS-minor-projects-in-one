@@ -1,0 +1,32 @@
+// ABSTRACTS
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// BASE
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// COMPONENTS
+@import "components/hamburger";
+@import "components/buttons";
+@import "components/slider";
+
+
+// LAYOUTS
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/hero";
+@import "layout/features";
+@import "layout/features-details";
+@import "layout/footer";
+
+// PAGES
+@import "pages/home";
+@import "pages/about";
+@import "pages/principal";
+@import "pages/staff";
+@import "pages/activities";
+@import "pages/contact";
+@import "pages/admission";

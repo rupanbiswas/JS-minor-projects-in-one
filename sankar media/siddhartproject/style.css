@@ -1,0 +1,230 @@
+html{
+  font-size: 62.5%;
+}
+body{
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+#logopic{
+    padding-top: 1rem;
+    height: 6rem;
+}
+#sankarnavbar{
+    padding: 1.5rem;
+    display: inline-block;
+}
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 2.8rem;
+    font-family: Georgia;
+    color: #ebe2e2;
+    font-size: 2rem;
+    background: #28324B;
+    padding: .4rem 2rem .4rem 2rem;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #4d576e;
+    text-decoration: none;
+  }
+  .nav{
+      padding: 2rem;
+  }
+
+  h1{
+    font-family:  'Noto Sans JP', sans-serif;
+    font-size: 6rem;
+    padding: 4rem;
+    color:#28324B ;
+}
+#video{
+    width:70%; /* or whatever width you want. */
+    max-width:70%;
+    height: 70%;
+    display: inline-block;
+}
+.text{
+    font-family: 'Noto Sans JP', sans-serif;
+    opacity: 70%;
+    padding: 2rem 2rem;
+    font-size: 1.5rem;
+}
+  .auditenquiry{
+      padding: 3rem;
+  }
+  div.at-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .at-item {
+    color: #28324B;
+    animation-name: focus-in-expand;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+  }
+  @keyframes focus-in-expand {
+    0%{
+      letter-spacing: -.5em;
+      filter: blur(12rem);
+      opacity: 0;
+    }
+    100%{
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  .card{
+      display: inline-block;
+  }
+  h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 2rem 20rem;
+  }
+
+  h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: rem;
+    padding: 2rem;
+    color:#28324B;
+  }
+  .cc{
+      padding: 2rem;   
+      
+  }
+  
+hr{
+    border-block-end-color:none;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: .8rem;
+    width: 10%;
+    border-color: #28324B;
+}   
+.card-img-top{
+    height: 18rem;
+    width: auto;
+}
+p{
+    font-family: 'Noto Sans JP', sans-serif ;
+    opacity: 70%;
+}
+
+.contact{
+  width: 60rem; margin-right: 10%; text-align: right; padding-top: .5rem; 
+ 
+}
+.footer{
+  background-color: #28324B;
+  color: white;
+}
+.footer1{
+  
+    background-color: #1c2438;
+    color: white;
+}
+
+
+#navlink{
+  color: black;
+  font-size: 2rem;
+}
+
+h3{
+  font-family: 'Noto Sans JP', sans-serif;
+  FONT-SIZE: 2.5rem; 
+   PADDING: 1rem;
+    opacity :100%;
+
+}
+
+#wimg{
+  width: 15rem;
+}
+
+#myh2{
+  padding-top: 3rem;
+}
+#timg{
+  width: 80%;
+}
+#testimonials{
+  margin-left: 20%; 
+  margin-right: 20%;
+}
+#service{
+  margin-right: 10%; 
+  margin-left: 10%; 
+  margin-bottom: 5%;
+}
+#k1{
+  width: 90rem; 
+   margin-left: 10%; 
+  text-align: left; 
+}
+#k2{
+  color: white; 
+  padding-left: 0;
+}
+#k3{
+  color: white;
+}
+#k4{
+  margin-top: 4%;
+   margin-bottom: 1%; 
+}
+#k5{
+  width: 60rem; 
+   margin-left: 10%; 
+  text-align: left;
+}
+#ic{
+  padding: 1rem;
+  
+}
+#k6{
+  width: 60rem; 
+  margin-right: 10%; 
+  text-align: right;
+   padding-top: .5em; 
+}
+#k7{
+padding-top: 3rem;
+
+}
+#ic2{
+  width: 4rem;
+  height: auto;
+}
+p{
+font-size: 1.5rem;
+
+}
+ @media(max-width:998px){
+  html{
+    font-size: 55%;
+  } 
+#wimg{
+  width: 10rem;
+  
+}
+h3{
+  font-size: 2rem;
+}
+h1{
+  font-size: 3rem;
+}
+}
+#features{
+  margin: 3rem;
+}

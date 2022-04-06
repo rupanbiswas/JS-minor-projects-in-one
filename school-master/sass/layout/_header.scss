@@ -1,0 +1,181 @@
+.text-logo {
+  color: $color-dark-yellow;
+  margin-right: auto;
+  text-decoration: none;
+  font-size: clamp(2.6rem, 2.5vw, 3.5rem);
+}
+
+
+.header {
+  padding: 2rem;
+  background-color: $color-dark-black;
+  position: relative;
+  z-index: 100;
+
+  // Hamburger Open Styles
+  &.open {
+
+    .header__toggle {
+      >span:first-child {
+        transform: rotate(45deg);
+      }
+
+      >span:nth-child(2) {
+        opacity: 0;
+      }
+
+      >span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient($color-dark-black, transparent);
+  }
+
+
+  &__toggle {
+    // Mobile Menu Toggle
+
+    >span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $color-white;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+
+  &__menu {
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: $color-white;
+    margin-top: 1.5rem;
+    padding: 1.625rem;
+    border-radius: 5px;
+
+    a:link,
+    a:visited {
+      display: block;
+      padding: 0.625rem;
+      color: $color-dark-black;
+      font-size: 1.8rem;
+      // text-decoration: none;
+      text-align: center;
+    }
+
+    a:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+
+.hide-for-desktop {
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.has-fade {
+  visibility: hidden;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+  animation: fade-out 200ms ease-in-out forwards;
+}

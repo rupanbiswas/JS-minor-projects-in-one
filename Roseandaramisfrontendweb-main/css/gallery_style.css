@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #aa44e56e ;
+}
+
+/* section  */
+section{
+    margin: 27px;
+    padding: 15px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 3px 6px 7px 0px black;;
+}
+
+.title-para{
+    margin: 11px auto;
+    padding: 9px;
+    /* border:2px solid black; */
+
+
+}
+.title-para p{
+    width: 60%;
+    justify-content: center;
+    margin: 9px auto;
+    padding: 7px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.gallery{
+    margin: 10px auto;
+    padding: 9px;
+    display: flex;
+    
+}
+.gal-1 {
+    display: flex;
+    margin: 9px;
+    padding: 7px;
+    flex-direction: column;
+    width: 35%;
+}
+
+
+.gal-1 img{
+height: 350px;
+width: 400px;
+margin: 9px auto;
+object-fit: cover;
+box-shadow: 3px 4px 9px black;
+}
+.para{
+    display: flex;
+    height: 80%;
+    width: 80%;
+    border: 2px solid red;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    justify-content: center;
+    text-align: center;
+    margin: auto auto;
+    z-index: -1;
+    /* display: none; */
+}
+
+
+
+
+
+
+
+
+
+/* imgae hover  */
+
+.mid-para{
+    margin: 7px auto;
+    padding: 5px;
+    display: flex;
+    /* width: 25%; */
+}
+.mid-para li{
+    list-style: none;
+    margin: auto auto;
+    padding: 78px;
+    /* height: 100vw; */
+    font-size: 3rem;
+
+}
+.linker{
+    /* border: 2px solid black; */
+    margin: 10px;
+    padding: 9px;
+    /* display: flex; */
+}
+.linker h3{
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    margin: auto auto;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.all-catg ul{
+    /* border: 2px solid green; */
+    display: flex;
+    margin: 15px auto;
+    padding: 12px;
+
+}
+
+.all-catg ul li{
+    margin: 13px auto;
+    padding: 10px;
+    list-style: none;
+}
+.all-catg ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgba(253, 7, 7, 0.705);
+}
+.all-catg ul li a:hover{
+    color: #db1d63;
+}
+
+.end-para{
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.end-para{
+    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+}
+
+
+
+/* responsive  */
+@media only screen and (max-width:1180px){
+    .gal-1 {
+        display: flex;
+        margin: 9px auto;
+        padding: 7px;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .title-para p{
+        width: 95%;
+    }
+    .gal-1 img{
+        height: 300px;
+        width: 250px;
+        margin: 9px auto;
+        /* padding: 7px; */
+        object-fit: cover;
+        box-shadow: 3px 4px 9px black;
+        }
+}
+
+
+@media only screen and (max-width:850px){
+    .gallery{
+       flex-direction: column;
+        
+    }
+
+    .gal-1 {
+       margin: auto auto;
+    width: 100%;
+
+    }
+    .gal-1 img{
+        height: 280px;
+        width: 100%;
+        margin: 9px auto;
+     
+    }
+
+    .mid-para ul{
+        display: flex;
+       flex-direction: row;                                                                                                                                                                                                                                                        ;
+       /* display: inline; */
+    }
+
+    .mid-para li{
+        padding: 2px 9px;
+        font-size: 1.4rem;
+   }
+   .all-catg ul{
+    flex-direction: column;
+    margin: auto auto;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+}
+
+

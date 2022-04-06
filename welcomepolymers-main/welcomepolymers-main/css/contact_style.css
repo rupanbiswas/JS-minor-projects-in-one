@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.from-title{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 11px auto;
+    width: 40%;
+    color: #3d83b6;
+    border-bottom: 2px solid #3d83b6;
+
+}
+.contactNum{
+    /* border: 2px solid red; */
+    margin: 29px 0;
+}
+.contactNum h2{
+    /* border: 2px solid rgb(255, 0, 170); */
+    color: #3d83b6;
+    font-size: 1.8rem;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.contactNum ul{
+    /* border: 2px solid rgb(30, 255, 0); */
+    display: flex;
+    width: 75%;
+    margin: 13px auto;
+    justify-content: space-between;
+    text-align: center;
+}
+.contactNum ul li a{
+    text-decoration: none;
+    color: #656565;
+    font-size: 1.4rem;
+}
+.contactNum ul li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.form-para{
+    font-size: 1.8rem;
+    text-align: center;
+    width: 80%;
+    margin: 19px auto;
+    color: #656565;
+    
+}
+.fromBx{
+    /* border: 2px solid black; */
+    width: 50%;
+    margin: 11px auto;
+}
+.fromBx form{
+    /* border: 2px solid rgb(204, 14, 14);   */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    /* margin-left: 45px; */
+}
+.fromBx form label{
+    /* border: 2px solid rgb(3, 181, 187);   */
+    font-size: 1.6rem;
+    color: #3d83b6;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.fromBx form input{
+    /* border: 2px solid rgb(17, 247, 139);   */
+    /* height: 2.5rem; */
+    margin-bottom: 15px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.514);
+    font-size: 1.3rem;
+    padding: 7px;
+    border-radius: 27px;
+    width: 75%;
+    margin:13px auto;
+    outline: none;
+}
+
+
+
+.fromBx form textarea{
+    border: none;
+    background-color: rgba(128, 128, 128, 0.514);
+    font-size: 1.3rem;
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+    width: 75%;
+    margin: 7px auto;
+}
+.fromBx form ul{
+    list-style: none;
+    /* border: 2px solid #11f78b;   */
+    width: 90%;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 19px auto;
+}
+.fromBx form ul li{
+    /* border: 2px solid rgb(213, 17, 247);   */
+    font-size: 1.3rem;
+    width:27%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+}
+.fromBx form ul li  input{
+    justify-content: space-around;
+    text-align: center;
+    /* margin: 5px; */
+    padding: 0;
+}
+.fromBx form ul li span{
+    /* margin-left: -7px; */
+    align-items: center;
+}
+.fromBx form button{
+    padding: 11px;
+    font-size: 1.2rem;
+    width: 150px;
+    margin: 23px auto;
+    border: none;
+    background-color: #3d83b6;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.mpBx iframe{
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    .form-para{
+        width: 75%;
+    }
+    .fromBx form{
+        /* border: 2px solid rgb(204, 14, 14); */
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 13px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contactNum h2{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .contactNum ul{
+        /* border: 2px solid rgb(30, 255, 0); */
+        display: flex;
+        flex-direction: column;
+        width: 37%;
+
+    }
+
+    .fromBx{
+        width: 100%;
+    }
+    .from-title{
+        width: 88%;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }    
+    .form-para{
+        width: 95%;
+        font-size: 1.3rem;
+    }
+    .fromBx form{
+        /* border: 2px solid rgb(61, 231, 9); */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .fromBx form input{
+        width: 85%;
+    }
+    .fromBx form ul{
+        width: 100%;
+        flex-direction: column;
+        /* border: 2px solid rgb(0, 128, 79); */
+
+    }
+    .fromBx form ul li {
+        width: 60%;
+        justify-content: space-between;
+        /* border: 2px solid purple; */
+        text-align: left;
+        flex-direction: row-reverse;
+    }
+    .fromBx form ul li input{
+        /* justify-content: right; */
+        justify-content:space-between;
+        align-items: center;
+        text-align: right;
+    }
+    .fromBx form textarea{
+        width: 85%;
+    }
+    .fromBx form button{
+        margin: 23px auto;
+    }
+}

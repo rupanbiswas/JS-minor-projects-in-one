@@ -1,0 +1,149 @@
+.admission-hero {
+    background-image: url("../images/school-large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+        opacity: 27%;
+    }
+}
+
+
+//////////////////////////
+// FEES STRUCTURE
+.fees{
+    &__header{
+        background-color: $color-dark-black;
+        padding: 2.5rem;
+    }
+
+    &__common-wrapper{
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    &__main{
+        padding: 5rem 2.5rem;
+        background-color: rgba(140, 164, 185, 0.966);
+    }
+}
+
+.flex-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: max(2rem, 5vw);
+
+
+    &>*{
+        flex-basis: 50%;
+    }
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background:linear-gradient(#040404,#040404) center/2px 100% no-repeat;
+    grid-column-gap: max(2rem, 6vw);
+    position: relative;
+   
+   
+    &:not(:last-child){
+       margin-bottom: 5rem;
+    }
+
+
+    margin:5px;
+
+
+    &-item{
+        position: relative;
+        background-color: $color-white;
+        margin: 2rem 0;
+        border-radius: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+.levels,
+.testimonials{
+    padding: 5rem 2.5rem ;
+}
+
+.three-cards{
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr;
+
+
+    @include respond(tab-port){
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.levels{
+    background-color: $color-white;
+
+    &__card{
+
+
+        &-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: 8rem;
+                width: 8rem;
+            }
+        }
+    
+        &-details{
+            height: 23rem;
+            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+            background-color: #D9D9D9;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-inline: 3rem;
+            gap: 1rem;
+    
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 50%;
+                clip-path: polygon(0 25%, 100% 0, 100% 25%, 0 75%);
+                
+                background-color: #C8C8C8;
+            }
+        }
+    }
+}
+
+
+.testimonials{
+ 
+    background-color: #fafafa;
+    
+    &__card{
+        background-color: $color-white;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+        img{
+            width: 100%;
+        }
+
+        &-details{
+            padding: 2.5rem 3rem;
+        }
+    }
+}

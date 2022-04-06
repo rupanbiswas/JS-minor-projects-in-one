@@ -1,0 +1,336 @@
+.heading--1 {
+    position: relative;
+    text-transform: uppercase;
+    // font-size: 3rem;
+    font-weight: 500;
+    color: $color-white;
+
+    font-size: 3.5rem;
+
+    @include respond(phone) {
+        font-size: 4.5rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 5rem;
+    }
+
+    @include respond(tab-land) {
+        font-size: 7rem;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -8%;
+        left: -10rem;
+        right: -25%;
+        bottom: -8%;
+        background-color: #C5BBBB;
+        opacity: 34%;
+        z-index: -1;
+    }
+}
+
+.heading--2 {
+    display: inline-block;
+    color: $color-dark-black;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.heading--3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color-dark-black;
+    text-align: center;
+}
+
+
+.testimonial__text {
+    font-size: 1.6rem;
+    color: rgba($color-dark-black, .9);
+    line-height: 1.4;
+    font-weight: 300;
+
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+    }
+}
+
+
+.paragraph {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $color-dark-black;
+    line-height: 1.4;
+
+    @include respond(tab-port) {
+        font-size: 1.8rem;
+    }
+
+    @include respond(tab-land) {
+        font-size: 2rem;
+    }
+}
+
+
+.footer {
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 1.6rem;
+        font-weight: 400;
+        transition: all .2s ease;
+
+        @include respond(tab-land) {
+            font-size: 1.4rem;
+        }
+
+        svg {
+            height: 1.2rem;
+            width: 1.2rem;
+            fill: $color-white;
+        }
+    }
+
+    &__link:hover,
+    &__link:active {
+        color: $color-dark-yellow;
+    }
+
+    &__para {
+        position: relative;
+        margin-left: auto;
+        font-size: 1.3rem;
+        color: rgba($color-white, .8);
+        line-height: 1.5;
+        margin-top: 5rem;
+
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+
+            width: 80%;
+            margin-top: 0;
+        }
+    }
+
+}
+
+
+.common-hero__title,
+.section-mission__title,
+.section-vision__title,
+.principal-details__title {
+    font-weight: 500;
+    font-size: 3rem;
+    color: $color-white;
+
+    // text-align: center;
+
+    @include respond(phone) {
+        font-size: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 3.8rem;
+    }
+
+    @include respond(tab-land) {
+        font-size: 4rem;
+    }
+}
+
+
+.about-hero__title {
+    color: $color-white;
+
+}
+
+.section-mission {
+    &__title {
+        color: $color-dark-yellow;
+        text-shadow: 1px 1px 5px $color-dark-black;
+    }
+
+}
+
+.section-mission__description,
+.section-vision__description,
+.principal-details__description {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-weight: 300;
+    text-align: center;
+    color: $color-white;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+.section-vision {
+    &__title {
+        color: $color-dark-yellow;
+    }
+
+    &__description {
+        text-align: left;
+        margin-top: max(3rem, 3vw);
+    }
+}
+
+.principal-details {
+    &__title {
+        color: $color-dark-black;
+    }
+
+    &__description {
+        text-align: left;
+        margin-top: max(2.5rem, 2.5vw);
+    }
+}
+
+.section-profiles__title {
+    display: inline-block;
+    position: relative;
+    font-size: clamp(3rem, 4vw, 4rem);
+    color: $color-white;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::after {
+        content: '';
+        display: block;
+        position: relative;
+        width: 50%;
+        height: 3px;
+        background-color: $color-dark-yellow;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.profile {
+    &__name {
+        color: $color-dark-black;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 1.4rem;
+        color: $color-white;
+    }
+}
+
+
+////////////////////////
+// CONTACT FORM
+.contact {
+    &-title {
+        color: $color-white;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    &-para {
+        color: $color-white;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+
+//////////////////
+// CONTACT PAGE
+
+.section-location {
+    &__h3 {
+        font-size: clamp(2.5rem, 3vw, 3rem);
+        color: #707070;
+        font-weight: 300;
+        line-height: 1;
+    }
+
+    &__para {
+        font-size: 1.6rem;
+        color: #707070;
+        font-weight: 300;
+        line-height: 1.4;
+    }
+}
+
+//////////////////////////////
+// ADMISSION PAGE
+.fees {
+    &__h3 {
+        color: $color-white;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: center;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            position: relative;
+            background-color: $color-white;
+        }
+    }
+}
+
+.grid-2-item {
+    font-size: 1.6rem;
+    color: $color-dark-black;
+    font-weight: 300;
+    padding: 1rem;
+
+
+}
+
+
+.levels__h3 {
+    display: inline-block;
+    font-size: clamp(2.8rem, 2.5vw, 3.2rem);
+    font-weight: 400;
+    color: rgba($color-dark-black, .9);
+    text-align: center;
+
+}
+
+.levels__para {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #707070;
+    text-align: center;
+}
+
+
+.testimonials {
+    &__title {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__h2 {
+        font-size: clamp(2.8rem, 2.5vw, 3.2rem);
+        color: rgba($color-dark-black, .9);
+        font-weight: 500;
+    }
+
+    &__para {
+        color: #707070;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+}

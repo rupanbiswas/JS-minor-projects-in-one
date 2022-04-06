@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin: 95px 0px;
+}
+.contact-details{
+    /* border: 2px solid black; */
+    margin: 33px 0px;
+}
+.contact-details h1{
+    /* border: 2px solid rgb(219, 12, 12); */
+    font-size: 2.1rem;
+    margin: 5px 11px;
+}
+.conrow-1st{
+    /* border: 2px solid green; */
+    display: flex;
+    margin: 0px 9px;
+}
+.open{
+    /* border: 2px solid violet; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 3px;
+    
+}
+.open h3{
+    margin: 5px 15px;
+    font-size: 1.5rem;    
+}
+.open h3 i{
+    margin:0px 3px;
+    font-size: 2rem;    
+    color: #c7a17a;
+}
+
+.open span{
+    margin: 5px 0px;
+    margin-left: 55px;
+    font-size: 1.2rem;    
+}
+.open span a{
+  text-decoration: none;  
+  color: #0e1f07;
+  font-size: 1.2rem;
+}
+.open span a:hover{
+  text-decoration:underline;
+}
+
+/* contact details 2nd row  */
+
+.conrow-2nd{
+    /* border: 2px solid green; */
+    display: flex;
+    margin: 0px 9px;
+}
+.open-2{
+    /* border: 2px solid violet; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 3px;
+    
+}
+.open-2 h3{
+    margin: 5px 15px;
+    font-size: 1.5rem;    
+}
+.open-2 h3 i{
+    margin:0px 3px;
+    font-size: 2rem;    
+    color: #c7a17a;
+}
+
+.open-2 span{
+    margin: 5px 0px;
+    margin-left: 55px;
+    font-size: 1.2rem;    
+}
+.open-2 span a{
+  text-decoration: none;  
+  color: #522003;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.open-2 span a:hover{
+  text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+ .contact-msg{
+     /* border: 2px solid black; */
+     display: flex;
+     margin: 11px 0px;
+ 
+ }   
+.para-msg{
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+}
+.para-msg p{
+   /* justify-content: center; */
+   text-align: center;
+   margin: auto auto;
+   width: 65%;
+   font-size: 1.5rem;
+   border-bottom: 2px solid black;
+}
+.contact-image{
+    margin: auto auto;
+    display: flex;
+}
+
+
+.contact-image img{
+    height: 350px;
+    width: 450px;
+    object-fit: cover;
+    margin: 35px;
+}
+.map iframe{
+    width: 100%;
+}
+.find{
+    /* border: 2px solid black;     */
+    padding: 15px 0px;
+    margin: 9px 15px;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    margin: 7px auto;
+}
+.find h1{
+    /* border: 2px solid rgb(228, 74, 74); */
+    font-size: 2rem;
+    /* border-bottom: 2px solid black; */
+    width: 100%;
+    display: flex;
+    margin: 9px 0px;
+    text-align: center;
+    justify-content: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    /* margin: 15px auto; */
+
+}
+input {
+    width: 45%;
+    margin: 7px auto;
+    background: #c7a17a;
+    border: none;
+    padding: 11px;
+    color: white;
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+textarea{
+    width: 48%;
+    margin: 7px auto;
+    background: #c7a17a;
+
+}
+button{
+    padding: 15px 30px;
+    margin: 10px auto;
+    cursor: pointer;
+    background: #c7a17a;
+    border: none;
+    color: white;
+}
+
+button:hover{
+
+    background: #432818;
+    color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width:882px)
+{
+    .contact-msg{
+        flex-direction: column;
+        /* background: chartreuse; */
+    }
+
+    .para-msg{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin: 19px 0;
+    }
+    .para-msg p{
+      
+        width: 100%;
+        font-size: 1.3rem;
+      
+     }
+
+}
+
+
+
+@media only screen and (max-width:554px)
+
+{
+    .contact-details h1{
+        text-align: center;
+    }
+    .conrow-1st{
+        flex-direction: column;
+    }
+
+    .conrow-2nd{
+        flex-direction: column;
+
+    }
+    .open{
+        width: 100%;
+        margin: 5px 0px;
+        
+    }
+    .open-2{
+        width: 100%;
+        margin: 5px 0px;
+        
+    }
+
+
+    .contact-image img{
+        height: 350px;
+        width: 300px;
+        object-fit: cover;
+        margin: 10px 0px;
+    }
+    .find{
+
+        width: 100%;
+        
+    }
+    input {
+        width: 85%;
+      text-align: center;
+    }
+    textarea{
+        width: 88%;
+     text-align: center;
+    
+    }
+
+
+
+
+
+
+
+
+}

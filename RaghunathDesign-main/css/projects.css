@@ -1,0 +1,13 @@
+.projects{
+    border: 1px solid red;
+}
+.projects-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projects-gallery img{
+    width: 45%;
+    object-fit: cover;
+    margin-bottom: 20px  ;
+}

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #aa44e56e ;
+}
+
+
+
+/* section style  */
+
+
+section{
+    margin: 27px;
+    padding: 15px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 3px 6px 7px 0px black;;
+}
+.para{
+    margin: 11px;
+    padding: 9px;
+    /* border: 2px solid black; */
+}
+
+.para p{
+    margin: 9px auto;
+    padding: 13px;
+    font-size: 1.2rem;
+    justify-content: center;
+    text-align: center;
+    /* font-weight: bold; */
+    font-family: 'Lobster', cursive;
+}
+
+
+/* product section style  */
+.products{
+    /* border: 2px solid red; */
+    margin: 25px;
+    padding: 23px;
+}
+.product-items-1{
+    display: flex;
+    margin: auto auto;
+
+}
+.product-items-1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 161px;
+    object-fit: cover;
+    margin: 19px;
+ 
+    /* border: 2px solid blue; */
+    box-shadow: 3px 7px 8px black;
+}
+
+.details p{
+    /* border: 2px solid black; */
+    /* display: flex; */
+    padding: 17px;
+    margin: 13px;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.details {
+    margin: auto auto;
+    width: 55%;
+    padding: 19px;
+    text-align: center;
+    
+}
+
+
+
+
+/* bar image style  */
+
+.bar{
+    /* border: 2px solid black; */
+    height: 75px;
+    width: 100%;
+    object-fit: cover;
+}
+.bar img{
+    /* border: 2px solid black; */
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    /* border-bottom: 2px solid black; */
+}
+.content{
+    margin: 17px;
+    padding: 19px;
+    /* border: 2px solid black; */
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.content li{
+    list-style: none;
+    padding: 3px;
+
+
+}
+.content a{
+text-decoration: none;
+color: black;
+
+}
+.content a:hover{
+text-decoration: none;
+color: white;
+font-size: 1.3em;
+}
+
+.socialmedia{
+    margin: 17px auto;
+    padding: 19px;
+    /* border: 2px solid black; */
+    width: 33%;
+
+    justify-content: center;
+    
+}
+.socialmedia  a{
+text-decoration: none;
+
+}
+ i.fab.fa-facebook-f:hover{
+color: #4062ac;
+}
+ i.fab.fa-instagram:hover{
+color: #d30cda;
+}
+ i.fab.fa-youtube:hover{
+color: #d10202;
+}
+.socialmedia i{
+    color: white;
+    margin: 13px;
+padding: 13px;
+font-size: 1.5em;
+
+}
+.icon{
+
+    text-align: center;
+    justify-content: center;
+}
+.address{
+    margin: 17px;
+    padding: 19px;
+    /* border: 2px solid black; */
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.address span{
+    margin: 7px;
+    padding: 2px;
+
+
+}
+
+
+
+.content h4, .socialmedia h4, .address h4{
+    color: white;
+    text-align: center;
+    
+}
+
+.space{
+    margin: 7px;
+    padding: 5px;
+}
+.lisence{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+   padding: 11px;
+    justify-content: center;
+    background: #ec9fbbfd;
+}
+
+
+
+
+
+footer{
+    /* border: 2px solid black; */
+    display: flex;
+    margin: 0 auto;
+    padding: 15px ;
+    background: #E84C86;
+
+    font-size: 1.2em;
+
+}
+
+
+
+@media only screen and (max-width: 800px){
+    section{
+        padding: 0;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        margin: 2px;
+        padding: 2px;
+    }
+    .product-items-1{
+        flex-direction: column;
+    
+    }
+
+    .details {
+        width: 100%;
+        justify-content: center;
+        padding: 2px;
+    }
+    .details p{
+      
+        padding: 0px;
+    }
+
+
+    .product-items-1 {
+        margin: auto auto;
+        justify-content: center;
+        display: flex;
+        padding: 0px;
+        /* border: 2px solid black; */
+    }
+    .product-items-1 img{
+        height: 250px;
+        width: 250px;
+        border-radius: 161px;
+        object-fit: cover;
+        margin: 11px auto;
+        
+        /* border: 2px solid blue; */
+        box-shadow: 3px 7px 8px black;
+     
+
+    }
+    .mid-image{
+        /* border: 2px solid black; */
+        margin:auto auto;
+        display: flex;
+    }
+
+
+
+
+}

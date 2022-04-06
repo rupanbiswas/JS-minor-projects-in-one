@@ -1,0 +1,116 @@
+:root{
+    --pink:	#E98199;
+    --red:#EF5454;
+}
+.aboutus{
+    padding-top: 50px;
+    /* border: 10px solid red; */
+    position: relative;
+}
+.bg-image{
+    background: url(../img/shape-1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+}
+.aboutus-img {
+/* border: 1px solid black; */
+/* padding: 20px; */
+position: relative;
+height: 80vh;
+}
+.aboutus-img img{
+position: relative;
+/* border: 1px solid blue; */
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.aboutus-img p{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 100px;
+    text-indent: 50px;
+padding: 20px;
+background-color: rgb(255 255 255 / 40%);
+    right: 0;
+    width: 50%;
+    font-size: 1.8em;
+    font-weight: 500;
+    text-shadow: 0 5px 10px rgb(49 49 49 / 64%);
+}
+.small-content{
+    /* border: 1px solid red; */
+}
+.small-content p{
+    width: 70%;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+/* aboutus sub footer */
+.aboutus-subfooter{
+    /* padding-top: 50px; */
+    /* border: 10px solid red; */
+    position: relative;
+}
+
+.aboutus-subfooter-img {
+/* border: 1px solid black; */
+/* padding: 20px; */
+position: relative;
+height: 80vh;
+}
+.aboutus-subfooter-img img{
+position: relative;
+/* border: 1px solid blue; */
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.aboutus-subfooter-img p{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 100px;
+    text-indent: 50px;
+padding: 20px;
+background-color: rgb(255 255 255 / 40%);
+    left: 0;
+    width: 50%;
+    font-size: 1.8em;
+    font-weight: 500;
+    text-shadow: 0 5px 10px rgb(49 49 49 / 64%);
+}
+@media (max-width:480px){
+    .bg-image{
+        background: url(../img/shape-2.svg);
+        background-repeat: no-repeat;
+        background-position: 0 20px;  
+    }
+    .aboutus-img{
+        height: 70vh;
+        /* border: 1px solid red; */
+    }
+    .aboutus-img img{
+        /* padding: 10px; */
+    }
+    .aboutus-img p{
+        top: 40px;
+        /* left: 20px; */
+        font-size: 1.3em;
+        width: 100%;
+    }
+    .small-content p{
+        width: 100%;
+        text-indent: 50px;
+        text-align: justify;
+        font-size: 1.3em;
+    }
+    .aboutus-subfooter-img {
+        height: 70vh;   
+    }
+    .aboutus-subfooter-img p{
+        width: 100%;
+        top: 150px;
+        font-size: 1.3em;
+    }
+}

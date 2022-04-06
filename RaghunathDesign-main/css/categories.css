@@ -1,0 +1,88 @@
+
+/* COVERED INDUSTRIES */
+.covered-industries{
+    /* border: 1px solid red; */
+padding: 20px;
+/* height: 90vh; */
+background: url('/img/dane-deaner-_-KLkj7on_c-unsplash.jpg');
+/* background-attachment: fixed; */
+/* backdrop-filter: initial; */
+}
+.covered-industries .covered-industries-header{
+    margin-left: auto;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-right: auto;
+    
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.covered-industries-header h1{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.555);
+    width: 70%;
+    margin: auto;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.covered-industries-header h1 .change{
+    font-weight: 100;
+}
+.covered-industries-header p{
+font-weight: 600;
+font-size: 1.3em;
+}
+
+.covered-industries .covered-industries-cards {
+    /* border: 5px solid green; */
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+.covered-industries-cards .covered-industries-card{
+    /* border: 1px solid blue; */
+    width: 100%;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+/* box-shadow: 0 0 5px rgb(59, 59, 59); */
+border: 1px solid rgb(143, 143, 143);
+font-size: 1.3em;
+}
+.covered-industries-card i{
+    font-size: 3em;
+    padding: 10px;
+    color: rgb(66, 66, 66);
+    /* background-color: rgb(161, 161, 161); */
+}
+.covered-industries-card img{
+height: 300px;
+width: 800px;
+border: 2px solid black;
+margin-left: 20px;
+}
+.covered-industries-card .covered-industries-content {
+ /* border: 1px solid red; */
+ height: 100%;
+ background-color: rgb(184, 184, 184);
+ padding: 10px;
+ color: rgb(15, 15, 15);
+}
+.covered-industries-content h1{
+    margin-bottom: 10px;
+}
+.reverse{
+    flex-direction: row-reverse;
+/* border: 1px solid red; */
+margin-left: 550px;
+}
+.reverse img{
+    margin-left: 0;
+    margin-right: 20px;
+}

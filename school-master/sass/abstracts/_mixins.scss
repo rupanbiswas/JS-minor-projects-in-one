@@ -1,0 +1,55 @@
+/*
+Project: School website
+Author: Abhijit Barman(Front-end developer at bluewebsurfuer.com)
+Written in: HTML, CSS, JS
+Project started on: 12th aprill 2021
+*/
+
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone - 600px
+- tab-port - 900px
+- tab-land - 1200px
+
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (min-width: 37.5em) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (min-width: 56.25em) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media only screen and (min-width: 75em) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+}

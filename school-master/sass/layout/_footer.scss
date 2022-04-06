@@ -1,0 +1,82 @@
+.footer {
+    background-image: url("../images/footer-img.jpg");
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color-dark-black, .68);
+
+    }
+
+
+    &__wrapper {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        padding-block: 8rem;
+        z-index: 10;
+        padding-inline: 2.5rem;
+
+        @include respond(phone) {
+            width: 85vw;
+            flex-direction: row;
+
+            &>* {
+                flex-basis: 50%;
+            }
+        }
+    }
+
+    &__links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+
+
+    &__social {
+        background-color: $color-dark-black;
+        padding-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-links {
+            position: relative;
+            z-index: 5;
+        }
+
+        &-link:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    &__website-link {
+        position: relative;
+        z-index: 5;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $color-white;
+        letter-spacing: 1px;
+    }
+
+}

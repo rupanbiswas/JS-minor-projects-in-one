@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="./css/flowercontactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+   
+    
+
+   
+    <!-- nav -->
+  <body style="margin-left: 0px;margin-right: 0px;padding-top: 0px;padding-left: 0px;padding-bottom: 0px;padding-right: 0px;margin-top: 0px;margin-bottom: 0px;">
+ <nav style="top: 0px;height: 63px;">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/ourwork">Our Works</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/services">Services</a></li>
+          
+          <li><a class="join-button" href="/contact">Call Now</a></li>
+        </ul>
+    </nav>
+          <!-- column -->
+          <section>
+          <div style="height: 60px;"><h2 class="contactus">Contact Us</h2>
+          <hr class="w-25 mx-auto pt-5" style=" width: 250px; display: block; margin-right: auto;margin-left: auto;">
+          <br>
+          </div>    
+          </section>
+
+<div class="clearfix" style="margin-top: 80px;">
+
+  <img class="img2" src="image/shop.png">
+  <div class="note">
+  <h4 style="color: #060606">45 BC, a Latin professor at Hampden-Sydney College in Virginia</h4>
+  <br>
+  <h4 style="color: #060606"><span class="collig" style="color: #060606">Phone :</span> +91 976885083</h4>
+  <br>
+  <h4 style="color: #060606"><span class="collig" style="color: #060606">Email :</span> vivek.mengu016@gmail.com</h4>
+</div>
+</div>
+<br>
+<br>       
+
+<section>
+    
+ <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.0391235954507!2d88.42394271413043!3d26.711197083214746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4414e0d1ec77d%3A0xa86ee45366c16ea6!2sVenus%20More!5e0!3m2!1sen!2sin!4v1615279536411!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->  
+<div class="container5">
+  <form action="/flowercontactus" method="post">
+    <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+    <input type="text" id="lname" name="email" placeholder="Your email id..">
+    <input type="number" id="number" name="number" placeholder="Your Mobile No..">
+    <textarea id="subject" name="subject" placeholder="Write Something.." style="height:200px"></textarea>
+    <!-- <input type="submit" value="Submit" > -->
+    <button type="submit" class="join-button"> submit</button>
+    </form>
+</div>
+</section>
+<br>
+<br>
+
+<!-- FOOTER START -->
+<section>
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <!-- <h1>Pages</h1> -->
+    <ul>
+      <a href="/about"> <li>About</li></a>
+     <a href="/ourwork"> <li>Our Works</li></a>
+    <a href="/about"> <li>Social</li></a> 
+    <a href="/contact">  <li>Get in touch</li></a>
+    </ul>
+  </div>
+
+  
+  <div class="col">
+    <h1 style="color: #f0f0f0">Support</h1>
+    <ul>
+      <p style="color: #f0f0f0">Sardapally (Phansidewa More),</p>
+      <p style="color: #f0f0f0"> opp. St. Joseph more,</p>
+      <p style="color: #f0f0f0"> P.O Kadamtala, Siliguri,</p>
+      <p style="color: #f0f0f0"> P.S. Matigara, Dist: Darjeeling,</p>
+      <p style="color: #f0f0f0"> PIN: 734011, W.B</p>
+
+      <p style="color: #f0f0f0">Telephone : +91 869 551 0051</p>
+
+        <p style="color: #f0f0f0">Telephone : +91 973 334 7999</p>
+
+          <p style="color: #f0f0f0">E-mail : bws@bluewebsurfer.com</p>
+    </ul>
+  </div>
+ <div class="col social" style="width: 150px; margin-left: 200px;">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="image/gmail2.png" style="width: 32px;"></li>
+      <li><img src="image/facebook2.png" style="width: 32px;"></li>
+      <li><img src="image/insta.png" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+</section>
+<!-- END OF FOOTER -->
+
+
+
+<script>const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+</script>
+  </body>
+</html>

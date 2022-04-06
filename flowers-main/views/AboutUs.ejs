@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="./css/aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+   
+
+    <!-- nav -->
+    <!-- nav -->
+  <body>
+    <nav style="top: 0px;height: 63px;">
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+           <li><a href="/">Home</a></li>
+            <li><a href="/ourwork">Our Works</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            
+            <li><a class="join-button" href="/contact">Call Now</a></li>
+        </ul>
+    </nav>
+
+         
+
+            <div>
+              <h2 class="about">About Us</h2>
+              <hr class="w-25 mx-auto pt-5" style=" width: 220px; display: block; margin-right: auto;margin-left: auto;">
+              <br>
+            </div>    
+<section style="margin-bottom: 100px;">
+<div class="clearfix" style="padding-top: 55px; padding-left: 25px; padding-right: 25px;">
+  <img class="img4" src="image/wedding.jpg" alt="Pineapple">
+  <p style="color: #131418">Our friendly retailers are always here to fulfill your daily floral needs lilies, rajnigandha or roses our expansive varieties comprised of both exotic and local bloom are sourced fresh and looked after everyday pertaining to their delicate nature.
+Car decoration being our specialty is conducted throughout the entirety keeping in mind not to cause damage throughout the exterior of the transit, our experienced decorators evaluate the design aesthetics of the décor before delivery of the final product.
+Flowers are a fascinating aspect in one’s life weather in welcoming of a new person into our life or bidding goodbye to someone close.
+Flowers bring us a sense of respect, commitment or importance and help us perceive a different approach.
+  </p>
+  <br>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa0;">
+    <h2 style="color: #131418">Column 1</h2>
+    <p style="color: #131418">Some text..chgjxfjxf fgjxfj xfgjx fgjfj hjhch jvkhjv</p>
+  </div>
+  <div class="column" style="background-color:#aaa0;">
+    <h2 style="color: #131418">Column 2</h2>
+    <p style="color: #131418">Some text..chgjxfjxf jfxjxfjxfj xfjxfgjxf gjxfgjxfgjxfg  zdfhzdh  fgjxfj xfgjx fgjfj</p>
+  </div>
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER START -->
+<section>
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <!-- <h1>Pages</h1> -->
+    <ul>
+      <a href="/about"> <li>About</li></a>
+     <a href="/ourwork"> <li>Our Works</li></a>
+    <a href="/about"> <li>Social</li></a> 
+    <a href="/contact">  <li>Get in touch</li></a>
+    </ul>
+  </div>
+
+  
+  <div class="col">
+    <h1 style="color: #f0f0f0">Support</h1>
+    <ul>
+      <p style="color: #f0f0f0">Sardapally (Phansidewa More),</p>
+      <p style="color: #f0f0f0"> opp. St. Joseph more,</p>
+      <p style="color: #f0f0f0"> P.O Kadamtala, Siliguri,</p>
+      <p style="color: #f0f0f0"> P.S. Matigara, Dist: Darjeeling,</p>
+      <p style="color: #f0f0f0"> PIN: 734011, W.B</p>
+
+      <p style="color: #f0f0f0">Telephone : +91 869 551 0051</p>
+
+        <p style="color: #f0f0f0">Telephone : +91 973 334 7999</p>
+
+          <p style="color: #f0f0f0">E-mail : bws@bluewebsurfer.com</p>
+    </ul>
+  </div>
+  <div class="col social" style="width: 350px; padding-left: 200px;">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="image/gmail2.png" style="width: 32px;"></li>
+      <li><img src="image/facebook2.png" style="width: 32px;"></li>
+      <li><img src="image/insta.png" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+</section>
+<!-- END OF FOOTER -->
+
+<script>const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+</script>
+  </body>
+</html>

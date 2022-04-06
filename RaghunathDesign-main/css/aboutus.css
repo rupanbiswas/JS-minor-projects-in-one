@@ -1,0 +1,31 @@
+.aboutus{
+    /* border: 1px solid red; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutus-img,
+.aboutus-content{
+    width: 49%;
+}
+.aboutus-img{
+    height:60vh;
+    /* width: 100%; */
+    /* border: 1px solid blue; */
+}
+.aboutus-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -350px;
+}
+.aboutus-content{
+    padding: 20px;
+    font-size: 1.5em;
+}
+.aboutus-content h1{
+    margin-bottom: 20px;
+}
+.aboutus-content p{
+    color: rgb(75, 75, 75);
+}
